@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+.App{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-columns: repeat(12,1fr);
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .Header{
+    width: 100%;
+    grid-column:span 12;
+    background-color: #EDD2F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App .Main{
+    width: 100%;
+    grid-column:span 10;
+    background-color: #FFFCDC;
+
+}
+ .App .Menu{
+    width: 100%;
+    grid-column:span 2;
+    background-color: hsl(194, 82%, 74%);;
+} 
+
+
+.App .Footer{
+    width: 100%;
+    grid-column:span 12;
+    background-color: #516BEB;
+    font-size: large;
+    color: white;
+}
+.StateCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    overflow: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .StateCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .StateCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
-}
+  
+  .StateCard .content {
+    padding: 10px;
+  }
+  
+  .StateCard .content h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .StateCard .content p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  

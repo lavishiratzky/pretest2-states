@@ -1,0 +1,8 @@
+.Page404 {
+	
+}
+.Page404  * {
+    height: 60%;
+    width: 100%;
+    overflow-y: auto;
+}

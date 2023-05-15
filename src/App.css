@@ -53,9 +53,10 @@
   }
   
   .StateCard img {
-    width: 100%;
+    width: 90%;
     height: 200px;
     object-fit: cover;
+    border:black solid 2px;
   }
   
   .StateCard .content {
@@ -71,4 +72,6 @@
     font-size: 16px;
     margin-bottom: 0;
   }
-  
+  .img{
+   
+  }

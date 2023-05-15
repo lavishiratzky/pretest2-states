@@ -9,11 +9,11 @@ function StateCard(props:StateCardProps): JSX.Element {
 
     return (
         <div className="StateCard">
-		<p>Name: {props.state.name}</p>
-        <p>Capital: {props.state.capital}</p>
-        <p>Population: {props.state.population}</p>
-        <p>Flag:</p>
-        <img src={props.state.flag } alt="image not found" />		
+		{props.state.name? <p>Capital: {props.state.name}</p>:<p>No name yet</p>}
+        {props.state.capital? <p>Capital: {props.state.capital}</p>:<p>No Capital yet</p>}
+        {props.state.population? <p>Population: {props.state.population}</p> : <p>No population yet</p>}
+        {props.state.flag?
+        <img src={props.state.flag } alt="image not found" /> :<p>No Flag yet</p>}		
         </div>
     );
 }
